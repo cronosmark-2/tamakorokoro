@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour
     public float speed; // 動く速さ
     public Text scoreText; // スコアの UI
     public Text winText; // リザルトの UI
+    public Text loseText;//地面に着いたときのUI
 
     private Rigidbody rb; // Rididbody
     private int score; // スコア
@@ -21,6 +22,7 @@ public class PlayerController : MonoBehaviour
         score = 0;
         SetCountText();
         winText.text = "";
+        loseText.text = "";
     }
 
     void Update()
